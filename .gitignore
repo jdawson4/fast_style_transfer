@@ -1,0 +1,7 @@
+# Do not, by any means, upload the network:
+magenta_arbitrary_image_stylization/
+
+# We also shouldn't upload any of the extra images we put in any of the folders. The example images are enough for github:
+content_images/
+style_images/
+stylized_images/
