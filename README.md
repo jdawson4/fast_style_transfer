@@ -4,7 +4,7 @@ Implementing/playing around with code from tfhub.dev/google/magenta/arbitrary-im
 Visualization:
 <img src="style_images/starry_night.jpg" alt="Starry Night by Van Gogh" title="Starry Night by Van Gogh">
 <img src="content_images/metro_center.jpg" alt="DC's Metro Center" title="DC's Metro Center">
-<img src="stylized_images/metro_center.jpg" alt="Metro Center in the style of Starry Night!" title="Metro Center in the style of Starry Night!">
+<img src="stylized_images/metro_center_style_of_starry_night.jpg" alt="Metro Center in the style of Starry Night!" title="Metro Center in the style of Starry Night!">
 
 Requirements:
 1. Python
