@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 content_image_path = "metro_center.jpg" # make sure this points to the right photo!
-style_image_path = "van_gogh_self_portrait.jpg" # make sure this points to the right photo!
+style_image_path = "starry_night.jpg" # make sure this points to the right photo!
 
 # Load content and style images (see example in the attached colab).
 content_image = plt.imread("content_images/"+content_image_path)
