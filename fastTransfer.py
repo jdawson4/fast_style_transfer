@@ -9,8 +9,8 @@ import tensorflow as tf
 import matplotlib.pyplot as plt
 import numpy as np
 
-content_image_path = "metro_center.jpg"
-style_image_path = "starry_night.jpg"
+content_image_path = "metro_center.jpg" # make sure this points to the right photo!
+style_image_path = "starry_night.jpg" # make sure this points to the right photo!
 
 # Load content and style images (see example in the attached colab).
 content_image = plt.imread("content_images/"+content_image_path)
@@ -28,20 +28,18 @@ style_image = tf.image.resize(style_image, (256, 256))
 
 # Load image stylization module.
 model = tf.keras.models.load_model("magenta_arbitrary_image_stylization")
-#model.summary()
+model.summary() # probably unnecessary, but it's kinda cool to see the network!
 
 # Stylize image.
 outputs = model(tf.constant(content_image), tf.constant(style_image))
 stylized_image = outputs[0]
 
-#print(type(stylized_image))
-#print(stylized_image.shape)
-
+# a simple and ugly way of displaying photos:
 #plt.imshow(stylized_image.numpy()[0])
 #plt.show()
 
+# tensorflow processing???
 stylized_image = tf.keras.utils.array_to_img(stylized_image[0])
 
-#print(type(stylized_image))
-
+# save to file:
 tf.keras.preprocessing.image.save_img('stylized_images/'+content_image_path, stylized_image, scale=False)
