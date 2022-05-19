@@ -21,3 +21,8 @@ Usage:
 3. Edit fastTransfer.py so that content_image_path and style_image_path refer to the correct photos.
 4. Run the script fastTransfer.py. On my machine: "python fastTransfer.py" works once all requirements are met.
 5. Observe created images in stylized_images/!
+
+Visualization:
+<img src="style_images/starry_night.jpg" alt="Starry Night by Van Gogh" title="Starry Night by Van Gogh">
+<img src="content_images/metro_center.jpg" alt="DC's Metro Center" title="DC's Metro Center">
+<img src="stylized_images/metro_center.jpg" alt="Metro Center in the style of Starry Night!" title="Metro Center in the style of Starry Night!">
