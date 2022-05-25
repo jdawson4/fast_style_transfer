@@ -22,7 +22,7 @@ def performTransfer(content_image_path, style_image_path):
 	# Optionally resize the images. It is recommended that the style image is about
 	# 256 pixels (this size was used when training the style transfer network).
 	# The content image can be any size.
-	style_image = tf.image.resize(style_image, (256, 256))
+	style_image = tf.image.resize(style_image, (512, 512))
 
 	# Load image stylization module.
 	model = tf.keras.models.load_model("magenta_arbitrary_image_stylization")
